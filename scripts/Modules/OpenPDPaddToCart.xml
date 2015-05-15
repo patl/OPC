@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Verify PDP</codecomment>
+  <command name="clickAndWait" target="link=3 Strand Drop Necklace"/>
+  <command name="assertElementPresent" target="//*[@id='prSnippet25720078_0']/div[contains(@class,'prSnippetRatingUnclickable')][1]"/>
+  <command name="assertElementPresent" target="//*[@id='pdpMain']//img[contains(@class,'primary-image')]"/>
+  <command name="assertElementPresent" target="id=add-to-cart"/>
+  <codecomment>AddToCart</codecomment>
+  <command name="click" target="id=add-to-cart"/>
+  <command name="pause" value="1000"/>
+  <codecomment>Verify that product is added</codecomment>
+  <command name="assertTextPresent" value="glob:CART (1) ITEM, TOTAL: $36.00"/>
+  <codecomment>Open Cart Page</codecomment>
+  <command name="clickAndWait" target="//*[@id='mini-cart']//span[contains(@class,'mini-cart-total-label')][1]"/>
+</scriptmodule>

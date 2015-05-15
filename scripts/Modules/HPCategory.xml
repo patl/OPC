@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Open category page</codecomment>
+  <command name="clickAndWait" target="link=WOMENS"/>
+  <codecomment>Open SubCategory page</codecomment>
+  <command name="clickAndWait" target="link=Jewelry"/>
+  <codecomment>Verify page</codecomment>
+  <command name="assertText" target="//*[@id='main']/div[contains(@class,'breadcrumb')][1]" value="Home Womens Jewelry"/>
+</scriptmodule>

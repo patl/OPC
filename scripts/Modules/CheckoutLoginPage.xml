@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <command name="assertTextPresent" value="Checkout Login"/>
+  <codecomment>Returning Customers section</codecomment>
+  <command name="assertElementPresent" target="//*[@class='login-box-content returning-customers clearfix']"/>
+  <command name="assertTextPresent" value="Home My Account"/>
+  <command name="assertTextPresent" value="RETURNING CUSTOMERS"/>
+  <command name="assertElementPresent" target="//form[@id='dwfrm_login']/fieldset/div[1]/input"/>
+  <command name="assertElementPresent" target="id=dwfrm_login_password"/>
+  <command name="assertText" target="//form[@id='dwfrm_login']/fieldset/div[3]/label" value="Remember Me"/>
+  <command name="assertElementPresent" target="name=dwfrm_login_login value=Login"/>
+  <command name="assertElementPresent" target="id=password-reset"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//div[contains(@class,'login-box-content') and contains(@class,'returning-customers') and contains(@class,'clearfix')][1]"/>
+  <command name="assertElementPresent" target="//*['fieldset']"/>
+  <command name="assertElementPresent" target="xpath=id('dwfrm_oauthlogin')/fieldset[1]"/>
+  <codecomment>Guest Checkout section</codecomment>
+  <command name="assertTextPresent" value="GUEST CHECKOUT"/>
+  <command name="assertElementPresent" target="name=dwfrm_login_unregistered value=Checkout"/>
+  <codecomment>New Customers section</codecomment>
+  <command name="assertTextPresent" value="NEW CUSTOMERS"/>
+  <command name="assertElementPresent" target="name=dwfrm_login_register value=Create an Account"/>
+</scriptmodule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Type Credentials</codecomment>
+  <command name="assertTextPresent" value="Email Address"/>
+  <command name="assertTextPresent" value="Password"/>
+  <command name="click" target="name=dwfrm_login_login value=Login"/>
+  <command name="assertTextPresent" value="Please enter your email address"/>
+  <command name="assertTextPresent" value="Please enter your password"/>
+  <command name="type" target="//form[@id='dwfrm_login']/fieldset/div[1]/input" value="ogboiko+test@gmail.com"/>
+  <command name="type" target="id=dwfrm_login_password" value="test12345"/>
+  <command name="clickAndWait" target="document.forms[1].dwfrm_login_login"/>
+</scriptmodule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Open Site</codecomment>
+  <module name="Modules.OpenSite"/>
+  <command name="assertElementPresent" target="//*[@id='navigation']//ul[contains(@class,'menu-category') and contains(@class,'level-1') and contains(@class,'clearfix')][1]"/>
+  <module name="Modules.HPCategory"/>
+  <command name="assertElementPresent" target="id=search-result-items"/>
+  <module name="Modules.OpenPDPaddToCart"/>
+  <module name="Modules.CartPageCheckout"/>
+  <module name="Modules.CheckoutLoginPage"/>
+  <module name="Modules.LogInWithUser"/>
+</testcase>

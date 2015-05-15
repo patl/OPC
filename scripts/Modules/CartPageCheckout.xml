@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Verify Cart Page</codecomment>
+  <command name="waitForTextPresent" value="Your Shopping Cart"/>
+  <command name="assertElementPresent" target="id=dwfrm_cart_couponCode"/>
+  <command name="assertElementPresent" target="id=add-coupon"/>
+  <command name="assertElementPresent" target="id=update-cart"/>
+  <command name="assertElementPresent" target="name=dwfrm_cart_checkoutCart value=Checkout"/>
+  <codecomment>Click on Checkout page -&gt;  Checkout Login</codecomment>
+  <command name="clickAndWait" target="name=dwfrm_cart_checkoutCart value=Checkout"/>
+</scriptmodule>
