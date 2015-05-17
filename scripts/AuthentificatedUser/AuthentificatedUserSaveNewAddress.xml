@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Open Site</codecomment>
+  <module name="Modules.OpenSite"/>
+  <command name="assertElementPresent" target="//*[@id='navigation']//ul[contains(@class,'menu-category') and contains(@class,'level-1') and contains(@class,'clearfix')][1]"/>
+  <module name="Modules.HPCategory"/>
+  <command name="assertElementPresent" target="id=search-result-items"/>
+  <module name="Modules.OpenPDPaddToCart"/>
+  <module name="Modules.CartPageCheckout"/>
+  <module name="Modules.CheckoutLoginPage"/>
+  <module name="Modules.LogInWithUser"/>
+  <module name="Modules.NewAddress"/>
+  <command name="check" target="id=dwfrm_singleshipping_shippingAddress_addToAddressBook"/>
+  <command name="check" target="id=dwfrm_singleshipping_shippingAddress_useAsBillingAddress"/>
+  <command name="check" target="id=dwfrm_billing_billingAddress_addToAddressBook"/>
+  <module name="Modules.SubmitOrderButton"/>
+  <module name="Modules.ThankYouPage"/>
+  <command name="clickAndWait" target="link=TEST OPC"/>
+  <command name="clickAndWait" target="//div[@id='primary']/div[2]/ul/li[3]/a"/>
+  <command name="assertTextPresent" value="Addresses"/>
+  <command name="assertElementPresent" target="//*[@id='addresses']//li[contains(@class,'first') and contains(@class,'default')]"/>
+  <module name="Modules.Return2Home"/>
+</testcase>

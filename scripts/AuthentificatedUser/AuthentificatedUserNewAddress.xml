@@ -9,4 +9,8 @@
   <module name="Modules.CartPageCheckout"/>
   <module name="Modules.CheckoutLoginPage"/>
   <module name="Modules.LogInWithUser"/>
+  <module name="Modules.NewAddress"/>
+  <module name="Modules.SubmitOrderButton"/>
+  <module name="Modules.ThankYouPage"/>
+  <module name="Modules.Return2Home"/>
 </testcase>

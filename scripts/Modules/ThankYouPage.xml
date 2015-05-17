@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <command name="assertTextPresent" value="Thank you for your order."/>
+  <command name="assertTextPresent" value="Order Summary"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//td[contains(@class,'order-information')][1]"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//td[contains(@class,'order-billing')][1]"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//td[contains(@class,'order-payment-instruments')][1]"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//td[contains(@class,'order-payment-summary')][1]"/>
+  <command name="assertElementPresent" target="//div[@id='primary']/div[2]/table[2]/tbody/tr/td[1]"/>
+  <command name="assertElementPresent" target="//div[@id='primary']/div[2]/table[2]/tbody/tr/td[2]"/>
+  <command name="assertElementPresent" target="//div[@id='primary']/div[2]/table[2]/tbody/tr/td[3]"/>
+  <command name="assertElementPresent" target="//*[@id='primary']//td[contains(@class,'order-shipment-details')][1]"/>
+</scriptmodule>
