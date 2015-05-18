@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Validation For ZIP Shipping</codecomment>
+  <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_country" value="label=United States"/>
+  <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_states_state" value="label=American Samoa"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="asdasdasd"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertTextPresent" value="glob:Warning: No message defined for dwfrm_singleshipping_shippingAddress_addressFields_zip"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="12345"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertNotTextPresent" value="glob:Warning: No message defined for dwfrm_singleshipping_shippingAddress_addressFields_zip"/>
+  <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_country" value="label=Canada"/>
+  <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_states_state" value="label=Northwest Territories"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="12345"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertTextPresent" value="glob:Warning: No message defined for dwfrm_singleshipping_shippingAddress_addressFields_zip"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="A1A 1A1"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertNotTextPresent" value="glob:Warning: No message defined for dwfrm_singleshipping_shippingAddress_addressFields_zip"/>
+  <codecomment>Validation For ZIP Shipping</codecomment>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_country" value="label=United States"/>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_states_state" value="label=Vermont"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="asdfg"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertTextPresent" value="glob:Warning: No message defined for dwfrm_billing_billingAddress_addressFields_zip"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="12345"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertNotTextPresent" value="glob:Warning: No message defined for dwfrm_billing_billingAddress_addressFields_zip"/>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_country" value="label=Canada"/>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_states_state" value="label=Armed Forces America (exc. Canada)"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="asdc123"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertTextPresent" value="glob:Warning: No message defined for dwfrm_billing_billingAddress_addressFields_zip"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="A1A 1A1"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="assertNotTextPresent" value="glob:Warning: No message defined for dwfrm_billing_billingAddress_addressFields_zip"/>
+</scriptmodule>

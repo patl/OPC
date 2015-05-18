@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Coupon</codecomment>
+  <command name="assertTextPresent" value="Enter coupon code"/>
+  <command name="assertElementPresent" target="id=add-coupon"/>
+  <command name="click" target="id=add-coupon"/>
+  <command name="assertTextPresent" value="Please Enter a Coupon Code"/>
+  <codecomment>Invalid code</codecomment>
+  <command name="type" target="id=dwfrm_billing_couponCode" value="Incorrect"/>
+  <command name="click" target="id=add-coupon"/>
+  <command name="waitForTextPresent" value="Coupon code &quot;Incorrect&quot; is unknown."/>
+  <codecomment>Valid code</codecomment>
+  <command name="type" target="id=dwfrm_billing_couponCode" value="test"/>
+  <command name="click" target="id=add-coupon"/>
+  <command name="waitForTextPresent" value="Promo Code test has been added to your order and was applied."/>
+  <command name="assertTextPresent" value="Order Discount"/>
+</scriptmodule>

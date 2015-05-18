@@ -9,10 +9,14 @@
   <module name="Modules.CartPageCheckout"/>
   <module name="Modules.CheckoutLoginPage"/>
   <module name="Modules.LogInWithUser"/>
+  <module name="Modules.ValidationForZip"/>
   <module name="Modules.NewAddress"/>
   <command name="check" target="id=dwfrm_singleshipping_shippingAddress_addToAddressBook"/>
   <command name="check" target="id=dwfrm_singleshipping_shippingAddress_useAsBillingAddress"/>
   <command name="check" target="id=dwfrm_billing_billingAddress_addToAddressBook"/>
+  <module name="Modules.CouponCode"/>
+  <module name="Modules.GiftCertificate"/>
+  <module name="Modules.PaymentMethodVisa" disabled="true"/>
   <module name="Modules.SubmitOrderButton"/>
   <module name="Modules.ThankYouPage"/>
   <command name="clickAndWait" target="link=TEST OPC"/>

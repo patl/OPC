@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Bill Me Later</codecomment>
+  <command name="assertElementPresent" target="//form[@id='next']/fieldset[5]/div/div[1]/div[2]/label"/>
+  <command name="check" target="id=is-BML"/>
+  <command name="assertText" target="//*[@id='PaymentMethod_BML']/p[contains(@class,'form-caption')][1]" value="You must provide date of birth and the last four digits of your Social Security Number"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+  <command name="select" target="id=dwfrm_billing_paymentMethods_bml_year" value="label=1991"/>
+  <command name="select" target="id=dwfrm_billing_paymentMethods_bml_month" value="label=February"/>
+  <command name="select" target="id=dwfrm_billing_paymentMethods_bml_day" value="label=08"/>
+  <command name="click" target="id=dwfrm_billing_paymentMethods_bml_ssn"/>
+  <command name="type" target="id=dwfrm_billing_paymentMethods_bml_ssn" value="1234"/>
+  <command name="check" target="id=dwfrm_billing_paymentMethods_bml_termsandconditions"/>
+  <command name="click" target="name=dwfrm_billing_next value=Submit Order"/>
+</scriptmodule>

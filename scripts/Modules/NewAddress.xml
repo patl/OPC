@@ -9,15 +9,13 @@
   <command name="assertElementPresent" target="id=secondary"/>
   <command name="click" target="//*[@id='shipping-method-list']//legend[1]"/>
   <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_firstName" value="First Name ${RANDOM.Number(123)}"/>
-  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_lastName" value="Last Name ${RANDOM.Number(123)}
-"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_lastName" value="Last Name ${RANDOM.Number(123)} "/>
   <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_address1" value="Address1 ${RANDOM.Number(123)}"/>
   <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_address2" value="Address2 ${RANDOM.Number(123)}"/>
   <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_country" value="label=United States"/>
   <command name="select" target="id=dwfrm_singleshipping_shippingAddress_addressFields_states_state" value="label=Florida"/>
   <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_city" value="NY ${RANDOM.Number(123)}"/>
-  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="${RANDOM.Number(12311,99999)}
-"/>
+  <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_zip" value="${RANDOM.Number(12311,99999)} "/>
   <command name="type" target="id=dwfrm_singleshipping_shippingAddress_addressFields_phone" value="3213213333"/>
   <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_firstName" value="First name2 ${RANDOM.Number(123)}"/>
   <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_lastName" value="LAst Name2  ${RANDOM.Number(123)}"/>
@@ -27,14 +25,7 @@
   <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_states_state" value="label=Colorado"/>
   <command name="click" target="id=dwfrm_billing_billingAddress_addressFields_city"/>
   <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_city" value="City2  ${RANDOM.Number(123)}"/>
-  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="${RANDOM.Number(12311,99999)}
-"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="${RANDOM.Number(12311,99999)} "/>
   <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_phone" value="234-234-2344"/>
   <command name="type" target="id=dwfrm_billing_billingAddress_email_emailAddress" value="oleksiy+test@gmail.com"/>
-  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_owner" value="Visa ${RANDOM.String(5)}"/>
-  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_number" value="4111111111111111"/>
-  <command name="select" target="id=dwfrm_billing_paymentMethods_creditCard_year" value="label=2016"/>
-  <command name="select" target="id=dwfrm_billing_paymentMethods_creditCard_month" value="label=March"/>
-  <command name="click" target="id=dwfrm_billing_paymentMethods_creditCard_cvn"/>
-  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_cvn" value="737"/>
 </scriptmodule>

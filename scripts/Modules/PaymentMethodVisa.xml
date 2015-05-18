@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_owner" value="Visaname"/>
+  <command name="click" target="id=dwfrm_billing_paymentMethods_creditCard_number"/>
+  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_number" value="4111111111111111"/>
+  <command name="select" target="id=dwfrm_billing_paymentMethods_creditCard_year" value="label=2016"/>
+  <command name="click" target="id=dwfrm_billing_paymentMethods_creditCard_cvn"/>
+  <command name="type" target="id=dwfrm_billing_paymentMethods_creditCard_cvn" value="737"/>
+</scriptmodule>

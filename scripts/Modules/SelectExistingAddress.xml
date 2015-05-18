@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <command name="select" target="id=dwfrm_singleshipping_addressList" value="label=(NY 71) Address1 43, NY 71, FL, 90413"/>
+  <command name="assertTextPresent" value="First Name 103"/>
+  <command name="assertTextPresent" value="Last Name 116"/>
+  <command name="assertTextPresent" value="Address1 43"/>
+  <command name="assertTextPresent" value="Address2 10"/>
+  <command name="assertVisible" target="id=dwfrm_singleshipping_shippingAddress_addressFields_country"/>
+  <command name="assertTextPresent" value="NY 71"/>
+  <command name="assertTextPresent" value="90413"/>
+  <command name="assertTextPresent" value="3213213333"/>
+  <command name="select" target="id=dwfrm_billing_addressList" value="label=(NY 95) Address1 51, NY 95, FL, 91911"/>
+  <command name="assertTextPresent" value="First Name 33"/>
+  <command name="assertTextPresent" value="Last Name 69"/>
+  <command name="assertTextPresent" value="Address1 51"/>
+  <command name="assertTextPresent" value="Address2 115"/>
+  <command name="assertTextPresent" value="NY 95"/>
+  <command name="assertTextPresent" value="91911"/>
+  <command name="assertTextPresent" value="ogboiko+test@gmail.com"/>
+</scriptmodule>

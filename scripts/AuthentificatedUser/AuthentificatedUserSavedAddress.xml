@@ -10,8 +10,9 @@
   <module name="Modules.CheckoutLoginPage"/>
   <module name="Modules.LogInWithUser"/>
   <module name="Modules.ValidationForZip"/>
-  <module name="Modules.NewAddress"/>
-  <module name="Modules.PaymentMethodVisa"/>
+  <module name="Modules.SelectExistingAddress"/>
+  <module name="Modules.PaymentMethodBillMeLater"/>
+  <module name="Modules.PaymentMethodVisa" disabled="true"/>
   <module name="Modules.SubmitOrderButton"/>
   <module name="Modules.ThankYouPage"/>
   <module name="Modules.Return2Home"/>

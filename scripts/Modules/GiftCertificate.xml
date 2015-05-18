@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Gift Certificate</codecomment>
+  <command name="assertTextPresent" value="Redeem Gift Certificate"/>
+  <command name="assertElementPresent" target="name=dwfrm_billing_redeemGiftCert value=Apply"/>
+  <command name="assertElementPresent" target="id=gc-checkbalance"/>
+  <codecomment>Blank field.</codecomment>
+  <command name="clickAndWait" target="name=dwfrm_billing_redeemGiftCert value=Apply"/>
+  <command name="waitForTextPresent" value="Invalid Gift Certificate Code"/>
+  <codecomment>Invalid Certificate</codecomment>
+  <command name="type" target="id=dwfrm_billing_giftCertCode" value="TestGift"/>
+  <command name="clickAndWait" target="name=dwfrm_billing_redeemGiftCert value=Apply"/>
+  <command name="waitForTextPresent" value="Invalid Gift Certificate Code"/>
+  <codecomment>Valid Certificate</codecomment>
+  <command name="type" target="id=dwfrm_billing_giftCertCode" value="PTVHDQOIMO"/>
+  <command name="click" target="id=gc-checkbalance"/>
+  <command name="waitForTextPresent" value="Your current gift certificate balance is"/>
+  <command name="clickAndWait" target="name=dwfrm_billing_redeemGiftCert value=Apply"/>
+  <command name="assertTextPresent" value="has been discounted from your order"/>
+  <command name="assertElementPresent" target="//*[@id='rgc-PTVHDQOIMO']/span[1]"/>
+</scriptmodule>
