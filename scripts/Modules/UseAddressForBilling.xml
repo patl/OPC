@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Validation for Billing as Shipping
+First Name</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_firstName" value="FirstNameBilling"/>
+  <command name="assertEval" target="'${FirstName}'=='${FirstNameBilling}'" value="true"/>
+  <codecomment>Last Name</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_lastName" value="LastName2"/>
+  <command name="assertEval" target="'${LastName}'=='${LastName2}'" value="true"/>
+  <codecomment>Address 1</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_address1" value="Address12"/>
+  <command name="assertEval" target="'${Address1}'=='${Address12}'" value="true"/>
+  <codecomment>Address 2</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_address2" value="Address21"/>
+  <command name="assertEval" target="'${Address2}'=='${Address21}'" value="true"/>
+  <codecomment>City</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_city" value="City2"/>
+  <command name="assertEval" target="'${City}'=='${City2}'" value="true"/>
+  <codecomment>Zip Code</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="Zip2"/>
+  <command name="assertEval" target="'${ZIP}'=='${Zip2}'" value="true"/>
+  <codecomment>Phone</codecomment>
+  <command name="storeText" target="id=dwfrm_billing_billingAddress_addressFields_phone" value="Phone2"/>
+  <command name="assertEval" target="'${Phone}'=='${Phone2}'" value="true"/>
+  <codecomment>Email</codecomment>
+  <command name="type" target="id=dwfrm_billing_billingAddress_email_emailAddress" value="oleksiy+test@gmail.com"/>
+</scriptmodule>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <codecomment>Open Site</codecomment>
   <module name="Modules.OpenSite"/>
   <command name="assertElementPresent" target="//*[@id='navigation']//ul[contains(@class,'menu-category') and contains(@class,'level-1') and contains(@class,'clearfix')][1]"/>
   <module name="Modules.HPCategory"/>
@@ -8,9 +7,14 @@
   <module name="Modules.OpenPDPaddToCart"/>
   <module name="Modules.CartPageCheckout"/>
   <module name="Modules.CheckoutLoginPage"/>
-  <module name="Modules.LogInWithUser"/>
+  <module name="Modules.GuestCheckout"/>
   <module name="Modules.ValidationForZip"/>
-  <module name="Modules.NewAddress"/>
+  <module name="Modules.ShippingAddress"/>
+  <module name="Modules.BillingAddress"/>
+  <command name="check" target="id=dwfrm_singleshipping_shippingAddress_useAsBillingAddress"/>
+  <module name="Modules.CouponCode"/>
+  <module name="Modules.GiftCertificate" disabled="true"/>
+  <module name="Modules.PaymentMethodBillMeLater" disabled="true"/>
   <module name="Modules.PaymentMethodVisa"/>
   <module name="Modules.SubmitOrderButton"/>
   <module name="Modules.ThankYouPage"/>

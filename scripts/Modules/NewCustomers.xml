@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Create Account</codecomment>
+  <command name="assertTextPresent" value="NEW CUSTOMERS"/>
+  <command name="clickAndWait" target="document.forms[4].dwfrm_login_register"/>
+  <codecomment>Random First and Last name</codecomment>
+  <command name="type" target="id=dwfrm_profile_customer_firstname" value="First Name ${RANDOM.Number(123)} "/>
+  <command name="type" target="id=dwfrm_profile_customer_lastname" value="Last Name ${RANDOM.Number(123)} "/>
+  <codecomment>Random Email</codecomment>
+  <command name="store" target="${RANDOM.Number(123)}@email.com" value="Email"/>
+  <command name="type" target="id=dwfrm_profile_customer_email" value="${Email}"/>
+  <command name="type" target="id=dwfrm_profile_customer_emailconfirm" value="${Email}"/>
+  <codecomment>Random Password</codecomment>
+  <command name="store" target="Password ${RANDOM.Number(123)} " value="Password"/>
+  <command name="type" target="id=dwfrm_profile_login_password" value="${Password}"/>
+  <command name="type" target="id=dwfrm_profile_login_passwordconfirm" value="${Password}"/>
+  <codecomment>Press Apply button.</codecomment>
+  <command name="assertElementPresent" target="document.forms[1].dwfrm_profile_confirm"/>
+  <command name="clickAndWait" target="document.forms[1].dwfrm_profile_confirm"/>
+</scriptmodule>

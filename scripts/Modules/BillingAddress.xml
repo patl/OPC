@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Billing Address</codecomment>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_firstName" value="First name2 ${RANDOM.Number(123)}"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_lastName" value="LAst Name2  ${RANDOM.Number(123)}"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_address1" value="Address12  ${RANDOM.Number(123)}"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_address2" value="Address21  ${RANDOM.Number(123)}"/>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_country" value="label=United States"/>
+  <command name="select" target="id=dwfrm_billing_billingAddress_addressFields_states_state" value="label=Colorado"/>
+  <command name="click" target="id=dwfrm_billing_billingAddress_addressFields_city"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_city" value="City2  ${RANDOM.Number(123)}"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_zip" value="${RANDOM.Number(12311,99999)} "/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_addressFields_phone" value="234-234-2344"/>
+  <command name="type" target="id=dwfrm_billing_billingAddress_email_emailAddress" value="oleksiy+test@gmail.com"/>
+</scriptmodule>
